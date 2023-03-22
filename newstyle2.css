@@ -2,22 +2,21 @@
 {
 	position: fixed;
 	width: 100%;
-	height: 80px;
-	background: rgb(10, 10, 10);
-	z-index: 999;
+	height: 35px;
+	background: white;
 }
 
 .navbar {
 	display:inline-flex;
 	justify-content:flex-start;
-	 
+	z-index: 1; 
   }
   
 .navbar a {
-	padding: 30px;
+	padding: 10px;
 	text-decoration: none;
 	color: #fff;
-	background-color: #290404;
+	background-color: #eb5454;
 	border: 1px solid #fff;
 	border-radius: 5px;
 	margin: 0 5px;
@@ -35,12 +34,43 @@ main {
 	max-width: 500px;
 	text-align: center;
 	position: relative;
-	z-index: 0;
+	z-index: 1;
   }
   
+  .slideshow-container {
+	max-width: 800px;
+	position: relative;
+	margin: auto;
+  }
   
   .mySlides {
 	display:flex;
+  }
+  
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width:fit-content;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
   }
   
   .text {
@@ -75,6 +105,30 @@ main {
 	background-color: #717171;
   }
   
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1s;
+	animation-name: fade;
+	animation-duration: 1s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {
+	  opacity: .4
+	}
+	to {
+	  opacity: 1
+	}
+  }
+  
+  @keyframes fade {
+	from {
+	  opacity: .4
+	}
+	to {
+	  opacity: 1
+	}
+  }
   
 /*  this below is my previous web page css code */
 * {
@@ -137,12 +191,10 @@ textarea {
 	height:90px;
 	background:url(images/header.gif) repeat-x 0 0;
 	padding-bottom:20px;
-	display: flex;
 }
-.shell {
+.header .shell {
 	padding:27px 27px 0 12px;
 	width:941px;
-	
 }
 h1#logo a {
 	height:31px;
@@ -350,7 +402,6 @@ h1#logo span {
 	width: 50%;
 	height: 300px;
 	background-color: #f2f2f2;
-	z-index: 0;
   }
   
   .playlist {
@@ -363,7 +414,6 @@ h1#logo span {
 	max-width: 1000px;
 	position: relative;
 	margin: auto;
-	z-index: 0;
   }
   
   /* Hide the images by default */
@@ -374,7 +424,7 @@ h1#logo span {
   /* Next and previous buttons */
   .prev, .next {
 	cursor: pointer;
-	position: relative;
+	position: absolute;
 	top: 50%;
 	width: auto;
 	margin-top: -22px;
@@ -392,25 +442,19 @@ h1#logo span {
 	right: 0;
 	border-radius: 3px 0 0 3px;
   }
-
-   /* Position the "prev button" to the left */
-  .prev {
-	left: 0;
-	border-radius: 3px 0 0 3px;
-  }
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-	background-color: rgba(0, 0, 0, 0.432);
+	background-color: rgba(0,0,0,0.8);
   }
   
   /* Caption text */
   .text {
-	color: #f18585;
-	font-size: 30px;
+	color: #f2f2f2;
+	font-size: 15px;
 	padding: 8px 12px;
 	position: absolute;
-	bottom: 0px;
+	bottom: 8px;
 	width: 100%;
 	text-align: center;
   }

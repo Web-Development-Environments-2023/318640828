@@ -4,17 +4,43 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
+  <nav id="menu">
+    <!-- <div class="header" style="display: flex;">
+      <div class="shell">
+        <h1 id="logo"><a href="#"><img src="images/321289_trump-logo-png.jpg" alt="Logo_Trump" width="80" height="80" frameborder="1" allowtransparency="true"><span></span></a></h1>
+      </div>
+    </div> -->
+    <div class="navbar" style="display: flex;">
+      <img src="images/321289_trump-logo-png.jpg" alt="Logo_Trump" width="80" height="80" frameborder="1" allowtransparency="true">
+      <a href="#" class="active"><span>home</span></a>
+      <a href="#about">About Me</a>
+      <a href="#photos">My Photos</a>
+      <a href="#playlist">My Playlist</a>
+      <a href="#like">Like</a>
+      <a href="#qrcoder">QR code</a>
+      <a href="#spa">Q&A</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+    <!-- <div id="menur">
+      <ul>
+        <li><img src="icon.ico" alt="Menu icon" class="picture"></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#photos">My Photos</a></li>
+        <li><a href="#playlist">My Playlist</a></li>
+        <li><a href="#like">Like</a></li>
+        <li><a href="#qrcoder">QR code</a></li>
+        <li><a href="#spa">Q&A</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      </div> -->
+  </nav>
+<!-- <div class="container">
+  <h1>Welcome to My Website!</h1>
+  <p>Here you can find all sorts of information about me and my interests.</p>
+  <img src="images/321289_trump-logo-png.jpg" alt="My Photo">
+</div> -->
 		  
-<section id="about" class="section">
+<section id="about" class="section" style="text-align: center">
 <br/>
 <br/>
 <br/>
@@ -25,13 +51,15 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
+<br>
+<!-- <h2><a href="#">
+  What are we doing?
+</a></h2> -->
+<p><p><h2><strong>Our Mission to Make America Great Again!</strong></h2></p>
+  I left behind my former life because I could not sit by and watch career politicians continue bleeding this country dry and allow other nations to take advantage of us on trade, borders, foreign policy, and national defense. As President, I took on every powerful special interest, fixing globalist trade deals, ending foreign wars, securing the border, and standing up to Big Pharma and China. Together, we put America First and returned power to the American People.
+  The corrupt government cartel is once again destroying our country. We are a nation that surrendered in Afghanistan, and allowed Russia to devastate Ukraine, China to threaten Taiwan, and Iran to build a nuclear weapon. We are a nation where free speech is no longer allowed, crime is rampant like never before, terrorists are invading our southern border, and the economy is in a recession. We are a nation that is hostile to liberty, freedom, and faith.
+  Our populist movement to Make America Great Again is the only force on earth that will lead our country back to safety, prosperity, and peace. I will never stop fighting for you, the American People, against the failed political establishment. I take the slings and arrows for you so that we can have our country back. Together, we will finish the job of saving our country once and for all and raise the next generation of strong American Patriots and Leaders. 
+</p><br/>
 <br/>
 <br/>
 <br/>
@@ -54,7 +82,69 @@ about me
 <br/>
 <br/>
 <br/>
-my photos
+
+<main>
+  <h2>my photos</h2>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/Donald-Trump-Finger.jpg" style="width: 600px">
+      <div class="text">Donald-Trump-Fingering</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/th (1).jpg" style="width: 600px">
+      <div class="text">look</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/th (2).jpg" style="width: 600px">
+      <div class="text">just</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/th (3).jpg" style="width: 600px">
+      <div class="text">on</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/th.jpg" style="width: 600px">
+      <div class="text">me</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/white privilage.jpg" style="width: 600px">
+      <div class="text">white privilage</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/out.jpg" style="width: 600px">
+      <div class="text">out</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/green lantern cosplay.jpg" style="width: 600px">
+      <div class="text">my green lantern cosplay</div>
+    </div>
+
+
+    <script>let slideIndexer = 1;
+      showSlides(slideIndexer);
+      
+      function plusSlides(n) {
+        showSlides(slideIndexer += n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndexer = 1}
+        if (n < 1) {slideIndexer = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndexer-1].style.display = "block";
+      }</script>
+
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+</main>
 <br/>
 <br/>
 <br/>
@@ -77,13 +167,95 @@ my photos
 <br/>
 <br/>
 <br/>
-my playlist
+
+<main>
+  <h2>my playlist</h2>
+  <!-- <h2>Live Playlist</h2>
+  <div class="playlist">
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4JAvHpjipBk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div> -->
+  <div id="playlist-container">
+  <!-- This is where the playlist will be displayed -->
+      <iframe src="https://open.spotify.com/embed/playlist/45H8izs40ckTEKBFee5E9r?si=063922d4202a4b7f" width="300" height="530" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+<main>
+  <h2>Photo Gallery</h2>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/blowing in the wind.jpg" style="width: 600px">
+      <div class="text">Wind of changes</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/blowing in the wind(2).jpg" style="width: 600px">
+      <div class="text">Wind</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/blowing in the wind(3).jpg" style="width: 600px">
+      <div class="text">Blowin' in the Wind</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/blowing in the wind(4) nature.jpg" style="width: 600px">
+      <div class="text">Doves in the Wind</div>
+    </div>
+
+
+    <script>let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+      }</script>
+
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <!-- <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div> -->
+</main>
+<script>
+  // Use JavaScript to fetch the playlist data from your server
+  fetch('/get_playlist')
+    .then(response => response.json())
+    .then(data => {
+      // Create a list of songs and display them on the page
+      let playlist = document.createElement('ul');
+
+      for (let song of data.playlist) {
+        let item = document.createElement('li');
+        item.innerHTML = song.title + ' by ' + song.artist;
+        playlist.appendChild(item);
+      }
+
+      document.getElementById('playlist-container').appendChild(playlist);
+    })
+    .catch(error => console.error(error));
+</script>
+  
+</main>
 <br/>
 <br/>
 <br/>
 </section>
 
-<section id="like" class="section">
+<section id="like" class="section" style="text-align: center">
 <br/>
 <br/>
 <br/>
@@ -100,53 +272,49 @@ my playlist
 <br/>
 <br/>
 <br/>
+<h2>
 give me a like
+</h2>
+<br/>
+<br/>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="N3e8SVPv"></script>
+<div style="padding-left: 100px;" class="fb-like" data-href="https://web-development-environments-2023.github.io/318640828/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+
 <br/>
 <br/>
 <br/>
 </section>
 
-<section id="qrcoder" class="section">
+<section id="qrcoder" class="section" style="text-align: center">
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
+<h2 style="position:static">scan my code</h2>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
+<img src="images/frame.png" alt="QR code" class="qrcode" style="height: 180px; width: 140px;">
 <br/>
 <br/>
 <br/>
 </section>
 
-<section id="spa" class="section">
+<section id="spa" class="section" style="text-align: center">
 <br/>
 <br/>
 <br/>
 <br/>
+ANS - 
+<h3>
+Web1 refers to the early days of the internet, where web pages were static and read-only, with minimal interactivity.
 <br/>
+Web2 is the current state of the internet, where users can interact with web pages and generate user-generated content. Social media platforms, blogs, wikis, and online forums are examples of Web2 technologies.
 <br/>
+Web3 is the next evolution of the internet, with a focus on decentralization, security, and privacy. Decentralized applications (dApps) built on blockchain technology are examples of Web3 technologies.
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
+When searching for the side effects of medicines, a user on Web1 would typically encounter a static webpage with plain text containing information about the medicine and its side effects. On the other hand, a user on Web3 would have access to a decentralized application built on blockchain technology, where the data is verified, secure, and up-to-date. The user can interact with the application by leaving comments, contributing information, and sharing their experiences, leading to more reliable and trustworthy information. Additionally, the user has control over their data and can decide how it is used and shared.
+</h3>
 <br/>
 <br/>
 <br/>
@@ -169,13 +337,47 @@ ans
 <br/>
 <br/>
 <br/>
-contact me
+<h1>contact me</h1>
 <br/>
 <br/>
 <br/>
+<form class="contact-form" action="mailto:duanielad@gmail.com" method="post" enctype="text/plain">
+
+  <label for="email">Email:</label> </br>
+  <input type="email" id="email" name="email" required></br>
+
+  <label for="message">Message:</label></br>
+  <select id="emoji-select">
+    <option value="">Select an emoji</option>
+    <option value="😊">😊</option>
+    <option value="😢">😢</option>
+  </select></br>
+  
+  <textarea id="message" name="message" required></textarea></br>
+
+  <input id="submit-btn" type="submit" disabled value="Send"></button>
+
+</form>
+
+
 </section>
+</div>
 
-
+<script type="text/javascript">
+  const thumbnails = document.querySelectorAll('.thumbnails img');
+  const fullImage = document.querySelector('.full-image img');
+  const emailInput = document.getElementById('email');
+  const messageInput = document.getElementById('message');
+  const emojiSelect = document.getElementById('emoji-select');
+  
+  thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+      const fullSrc = thumbnail.getAttribute('data-full');
+      fullImage.setAttribute('src', fullSrc);
+    });
+  });
+</script>
+  
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
@@ -189,5 +391,77 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+<script>
+  const emailField = document.getElementById("email");
+  const submitBtn = document.getElementById("submit-btn");
+
+  submitBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    if (emailField.value.trim() !== "") {
+      alert("Your message has been sent");
+      submitBtn.setAttribute("disabled", true);
+    } else {
+      alert("Please enter a valid email address");
+    }
+  });
+
+  emailField.addEventListener("input", function() {
+    if (emailField.value.trim() !== "") {
+      submitBtn.removeAttribute("disabled");
+    } else {
+      submitBtn.setAttribute("disabled", true);
+    }
+  });
+
+emojiSelect.addEventListener('change', () => {
+  const selectedEmoji = emojiSelect.value;
+  if (selectedEmoji) {
+    messageInput.value += selectedEmoji;
+  }
+});
+
+// Add event listener to email input to enable submit button when email is entered
+emailInput.addEventListener('input', () => {
+  if (emailInput.checkValidity() && messageInput.value.trim()) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+});
+
+// Add event listener to message input to enable submit button when message is entered
+messageInput.addEventListener('input', () => {
+  if (emailInput.checkValidity() && messageInput.value.trim()) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+});
+
+// Add event listener to submit button to clear form and show success message
+submitBtn.addEventListener('click', () => {
+  messageInput.value = '';
+  emailInput.value = '';
+  submitBtn.disabled = true;
+});
+</script>
+
+</section>
+<br/>
+<br/>
+<!-- 
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script> -->
 </body>
 </html>

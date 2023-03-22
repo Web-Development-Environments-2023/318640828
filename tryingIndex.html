@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <nav id="menu">
+    <div class="header">
+      <div class="shell">
+        <h1 id="logo"><a href="#"><img src="images/321289_trump-logo-png.jpg" alt="Logo_Trump" width="50" height="50" frameborder="1" allowtransparency="true"><span></span></a></h1>
+      </div>
+    </div>
+    <div class="navbar">
+      <a href="#" class="active"><span>home</span></a>
+      <a href="#about">About Me</a>
+      <a href="#photos">My Photos</a>
+      <a href="#playlist">My Playlist</a>
+      <a href="#like">Like</a>
+      <a href="#qrcoder">QR code</a>
+      <a href="#spa">Q&A</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+  </nav>
+<!-- <div class="container">
+  <h1>Welcome to My Website!</h1>
+  <p>Here you can find all sorts of information about me and my interests.</p>
+  <img src="images/321289_trump-logo-png.jpg" alt="My Photo">
+</div> -->
+		  
+<section id="about" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br>
+<h2><a href="#">
+  What are we doing?
+</a></h2>
+<p><strong>Our Mission to Make America Great Again!</strong>. I left behind my former life because I could not sit by and watch career politicians continue bleeding this country dry and allow other nations to take advantage of us on trade, borders, foreign policy, and national defense. As President, I took on every powerful special interest, fixing globalist trade deals, ending foreign wars, securing the border, and standing up to Big Pharma and China. Together, we put America First and returned power to the American People.
+  The corrupt government cartel is once again destroying our country. We are a nation that surrendered in Afghanistan, and allowed Russia to devastate Ukraine, China to threaten Taiwan, and Iran to build a nuclear weapon. We are a nation where free speech is no longer allowed, crime is rampant like never before, terrorists are invading our southern border, and the economy is in a recession. We are a nation that is hostile to liberty, freedom, and faith.
+  Our populist movement to Make America Great Again is the only force on earth that will lead our country back to safety, prosperity, and peace. I will never stop fighting for you, the American People, against the failed political establishment. I take the slings and arrows for you so that we can have our country back. Together, we will finish the job of saving our country once and for all and raise the next generation of strong American Patriots and Leaders. 
+</p><br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="photos" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+my photos:
+<main>
+<h2>Photo Gallery</h2>
+<div class="gallery">
+  <img src="images/blowing in the wind.jpg" alt="Photo 1">
+  <img src="images/blowing in the wind(2).jpg" alt="Photo 2">
+  <img src="images/blowing in the wind(3).jpg" alt="Photo 3">
+  <img src="images/green lantern cosplay.jpg" alt="Photo 4">
+</div>
+</main>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="playlist" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+my playlist
+<main>
+  <!-- <h2>Live Playlist</h2>
+  <div class="playlist">
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4JAvHpjipBk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div> -->
+  <div id="playlist-container">
+  <!-- This is where the playlist will be displayed -->
+      <iframe src="https://open.spotify.com/embed/playlist/45H8izs40ckTEKBFee5E9r?si=063922d4202a4b7f" width="300" height="530" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+<main>
+  <h2>Photo Gallery</h2>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/blowing in the wind.jpg" style="width:100%">
+      <div class="text">Caption 1</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/blowing in the wind(2).jpg" style="width:100%">
+      <div class="text">Caption 2</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/blowing in the wind(3).jpg" style="width:100%">
+      <div class="text">Caption 3</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="images/green lantern cosplay.jpg" style="width:100%">
+      <div class="text">Caption 4</div>
+    </div>
+
+
+    <script>let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+      }</script>
+
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+</main>
+<script>
+  // Use JavaScript to fetch the playlist data from your server
+  fetch('/get_playlist')
+    .then(response => response.json())
+    .then(data => {
+      // Create a list of songs and display them on the page
+      let playlist = document.createElement('ul');
+
+      for (let song of data.playlist) {
+        let item = document.createElement('li');
+        item.innerHTML = song.title + ' by ' + song.artist;
+        playlist.appendChild(item);
+      }
+
+      document.getElementById('playlist-container').appendChild(playlist);
+    })
+    .catch(error => console.error(error));
+</script>
+  
+</main>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="like" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+give me a like
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="qrcoder" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+scan my code
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="spa" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+ans
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="contact" class="section">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+contact me
+<br/>
+<br/>
+<br/>
+</section>
+
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+</body>
+</html>
